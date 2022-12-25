@@ -1,0 +1,15 @@
+main{
+	display: flex;
+}
+
+/*Responsive para Tablet y celular*/
+
+
+@media screen and (max-width: 800px){
+	
+	main{
+		display: initial;
+		
+	}
+
+}

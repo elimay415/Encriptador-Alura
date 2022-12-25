@@ -1,0 +1,192 @@
+.desencriptar_mensaje{
+	/*Tamaño y posición*/
+	position: absolute;
+	width: 400px;
+	height: 944px;
+	left: 900px;
+	
+
+	/*Estilo*/
+	background: #FFFFFF;
+	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+	border-radius: 32px;
+
+}
+
+.imagen_box{
+	/*Tamaño y posición*/
+	position: absolute;
+	width: 336px;
+	height: 304px;
+	top: 243px;
+	left: 32px;
+}
+
+
+
+.mensaje_encriptado{
+	/*Posición de caja de texto*/
+	position: absolute;
+	top: 50px;
+	left: 32px;
+	right: 32px;
+
+
+	
+	/*Borde de caja de texto*/
+	border: none;
+	outline: none;/*Quita el borde por defecto de la etiqueta*/
+	border-radius: 15px;
+	
+
+
+	/*Estilo y posición de letra mensaje */
+	padding: 25px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28px;
+	color: #0A3871;
+	line-height: 150%;
+	
+}
+
+/*Modificar posición y estilo del texto del Placeholder*/
+.mensaje_encriptado::-webkit-input-placeholder{
+	/*Posición de Mensaje del Placeholder */
+	 text-align: center;/* Centrado Horizontal */
+	 padding-top: 400px;/* Centrado vertical con margen interna arriba*/
+	 
+	/*Estilo de letra de mensaje*/
+	border: none;
+	font-size: 24px;
+	line-height: 110%;
+	color: #D5D6FD;
+
+}
+
+.mensaje{
+	/*Tamaño y posición*/
+	position: absolute;
+	text-align: center;
+	width: 336px;
+	height: 122px;
+	top: 579px;
+	left: 32px;
+	right: 32px;
+	
+}
+
+.mensaje_1{
+	
+	/*Estilo*/
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 120%;
+	color: #343A40;
+
+}
+
+.mensaje_2{
+	/*Estilo*/
+	margin-top: 16px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: #495057;
+}
+
+/*Responsive para Tablet*/
+
+@media screen and (min-width: 481px) and (max-width: 800px ){
+	.desencriptar_mensaje, .mensaje, .imagen_box, .mensaje_encriptado {
+		position: initial;	
+		height: auto;
+	}
+
+	.desencriptar_mensaje {
+   	   width: 90%;
+	   /*height: 35%;*/
+	   margin: 6%;
+    }
+
+    .mensaje_encriptado{
+    	height: 40%;
+    	width: 100%;
+    	margin: 15px 0;
+    	padding-top: 5px;
+    }
+
+    .mensaje_encriptado::-webkit-input-placeholder{
+    	height: auto;
+    	padding-top: 60px;
+    	line-height: initial;
+	}
+
+	.imagen_box{
+		display: none;
+	}
+
+
+	.mensaje{
+		margin: auto;
+	}
+
+	.mensaje_1{
+		padding-top: 25px;
+	}
+
+	.mensaje_2{
+		margin: 5px 0 15px 0;
+		    padding-bottom: 25px;
+	}
+
+	.mensaje_1 br, .mensaje_2 br{
+		display: none;
+
+	}
+}
+
+/*Responsive para Celular*/
+
+@media screen and (max-width:480px){
+	.desencriptar_mensaje, .mensaje, .imagen_box, .mensaje_encriptado {
+		position: initial;	
+		height: auto;
+		width:327px;
+	}
+
+	.desencriptar_mensaje{
+		margin: 150px 25%;
+		width: 300%;
+	}
+
+	.imagen_box{
+		display: none;
+	}
+
+	.mensaje_encriptado{
+		font-size: 70px;
+	}
+
+	.mensaje{
+		width: auto;
+		margin: 5% 10%;
+	}
+
+	.mensaje_1{
+		font-size: 60px;
+	}
+
+	.mensaje_2{
+		font-size: 50px;
+	}
+
+	.mensaje_2 br{
+		display: none;
+	}
+}

@@ -1,0 +1,118 @@
+.encriptar{
+	width: 100%;
+	height: 950px;
+}	
+
+.encriptar_mensaje{
+	
+	/*Posición de input
+	position: absolute;
+	width: 577px;
+	height: 48px;
+	left: 240px;
+	top: 168px;
+	background: #AAB2D5;*/
+	
+	/*Posición de caja de texto */
+	position: absolute;
+	width: 45%;
+	height: 100%;
+	left: 240px;
+	top: 168px;
+	background: #F3F5FC;
+
+
+	/*Borde de caja de texto*/
+	border: none;
+	outline: none;
+
+	/*estilo letra mensaje */
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	color: #0A3871;
+	line-height: 150%;
+}
+
+.anotacion{
+
+	/*Posición mensaje*/
+	position: absolute;
+	margin-top: 821px;
+	margin-bottom: 155px;
+	margin-left: 264px;
+
+	/* Tamaño */
+	width: 260px;
+	height: 18px;
+
+	/*Estilo letra */
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400px;
+	font-size: 14px;
+	line-height: 150%;
+	color: #495057;
+	opacity: 0.8;
+}
+
+.anotacion_img{
+	width: 18px;
+	height: 18px;
+}
+
+/*Responsive para Tablet*/
+
+@media screen and (min-width: 481px) and (max-width: 800px ){
+	.encriptar, .anotacion{
+		width: auto;
+		height: auto;
+		position: initial;
+	}
+
+	.encriptar_mensaje{
+		position: initial;
+		width: 90%;
+		margin: 30px 6% 5px 6%;
+	 }
+
+	.anotacion{
+		margin: 5px 6%;
+	}
+
+}
+
+/*Responsive para Celular*/
+
+@media screen and (max-width: 480px){
+	
+	.encriptar, .anotacion{
+		width: auto;
+		height: auto;
+		position: initial;
+		
+	}
+
+	.encriptar_mensaje{
+		position: initial;
+	    width: 350%;
+	    height: 150%;
+	    margin: 15% 5% 0px 10%;
+	    font-size: 70px;
+	 }
+	
+	.anotacion{
+		width: 	250%;
+		margin: 50px 0 5px 5%;
+		font-size: 40px;
+	}
+	
+	.anotacion_img{
+		width: 36px;
+		height: 36px;
+	}
+
+}
+
+	

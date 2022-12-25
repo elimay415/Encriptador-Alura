@@ -1,0 +1,64 @@
+footer{
+	width: 100%;
+	text-align: center;
+	padding:5px ;
+}
+
+.logo_programa{
+	width: 5%;	
+}
+
+li{
+	display: inline;
+	padding: 0 40px 30px 20px;
+
+	/*Estilo */
+	text-align: center;
+	font-size: 15px;
+	font-family: sans-serif;
+	color: grey;	
+}
+
+a{
+	padding-right: 10px;
+	text-decoration: none;
+	color: grey;
+}
+
+svg{
+	width: 1.5%;
+}
+
+/*Responsive para Tablet*/
+
+@media screen and (max-width: 800px ){
+	li{
+	    padding: 0 20px 20px 10px;
+	}
+}
+
+/*Responsive para Celular*/
+
+@media screen and (max-width:480px){
+	
+	footer{
+		width: 300%;
+	}
+
+	.logo_programa{
+		width: 15%;
+		margin-left: 5%;
+	}
+
+	li{
+		font-size: 45px;
+	}
+
+	.desarrollador{
+		display: none;
+	}
+
+	svg{
+		width: 5%;
+	}
+}
