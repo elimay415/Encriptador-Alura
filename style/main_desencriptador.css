@@ -171,6 +171,8 @@
 
 	.mensaje_encriptado{
 		font-size: 70px;
+		height: 80%;
+		width: 100%;
 	}
 
 	.mensaje{
